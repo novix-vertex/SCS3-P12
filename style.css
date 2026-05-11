@@ -144,7 +144,7 @@ header .link i {
 
 .hero-right {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 20px;
 }
@@ -203,8 +203,9 @@ header .link i {
 }
 
 .thumbnails .thumbnail {
-    width: 250px;
-    aspect-ratio: 16/9;
+    width: 320px;
+    height:150px;
+    /* aspect-ratio: 16/9; */
     position: relative;
 }
 
