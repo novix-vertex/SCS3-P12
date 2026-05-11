@@ -1,12 +1,15 @@
-:root{
-    
+:root {
+    --white: #ffffff;
+    --black: #000000;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: helvetica;
 }
+
 html,
 body {
     width: 100%;
