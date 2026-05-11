@@ -2,7 +2,9 @@
     --white: #ffffff;
     --black: #000000;
     --gradient1: linear-gradient(90deg, #ff2d75, #ff8a00);
+    --gradient2: linear-gradient(to bottom, #ff2d75, #ff8a00);
     --border-pink: rgba(255, 45, 117, 0.4);
+    --bg-glass: linear-gradient(135deg, #ff006e, #1a001f, #5b006b);
 
 }
 
@@ -23,6 +25,7 @@ main {
     min-height: 100vh;
     background-image: url('assets/images/background.png');
     background-size: cover;
+    background-position: center;
 }
 
 header {
@@ -70,18 +73,22 @@ header .link i {
 
 .hero-left,
 .hero-right {
-    width: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 .hero-left {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.hero-left .hero-content {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 30px;
-    padding-left: 15%;
-    padding-block: 20px;
-
+    gap: 10px;
 }
 
 .hero-left img {
@@ -96,8 +103,8 @@ header .link i {
 
 .hero-left .links {
     display: flex;
-    align-items: center;
-    justify-content: flex-left;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 10px;
 }
 
@@ -108,9 +115,9 @@ header .link i {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:5px;
-    width:150px;
-    height:40px;
+    gap: 5px;
+    width: 150px;
+    height: 40px;
 }
 
 .hero-left .links .play-now {
@@ -137,10 +144,9 @@ header .link i {
 
 .hero-right {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 20px;
-    color: var(--white);
 }
 
 .hero-right .scroll {
@@ -148,23 +154,25 @@ header .link i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 32px;
 }
 
-.hero-right .scroll h4{
+.hero-right .scroll h4 {
     color: white;
-    letter-spacing: 5px;
     transform: rotate(270deg);
+    font-size: 12px;
+    opacity: 0.6;
 }
 
-.hero-right hr {
+.hero-right .scroll .line {
     width: 1px;
-    background: var(--gradient1);
-    height: 100px;
+    background: var(--gradient2);
+    height: 60px;
+    opacity: 0.4;
 }
 
 .hero-right .fighter {
-    width: 50%;
+    height: 450px;
 }
 
 .hero-right .socials {
@@ -176,7 +184,7 @@ header .link i {
 }
 
 .hero-right .socials img {
-    width: 50px;
+    width: 20px;
 }
 
 .thumbnails {
@@ -185,17 +193,18 @@ header .link i {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-image: url('assets/images/bg.webp');
-    border-radius: 12px;
-    position: absolute;
+    background: var(--bg-glass);
+    border-radius: 16px;
     z-index: 10;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%);
-    bottom: 10%;
+    transform: translateX(-50%);
+    bottom: 2%;
 }
 
 .thumbnails .thumbnail {
-    width: 300px;
+    width: 250px;
+    aspect-ratio: 16/9;
     position: relative;
 }
 
