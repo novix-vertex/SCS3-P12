@@ -67,19 +67,19 @@ header .link i {
 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .hero-left,
 .hero-right {
-    width: 40%;
+    flex: 1;
 }
 
 .hero-left {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-left .hero-content {
@@ -91,7 +91,7 @@ header .link i {
 }
 
 .hero-left img {
-    width: 50%;
+    width: 300px;
 }
 
 .hero-left p {
@@ -203,7 +203,7 @@ header .link i {
 
 .thumbnails .thumbnail {
     width: 320px;
-    height:150px;
+    height: 150px;
     /* aspect-ratio: 16/9; */
     position: relative;
 }
